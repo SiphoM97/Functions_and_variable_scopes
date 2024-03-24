@@ -18,3 +18,23 @@ def add_nums(a, b):
         return answer
 
     print(add_nums(2, 13))
+
+# Global scope is when a variable is declared outside of a function.
+global_var = 13
+
+
+def add_nums(a, b):
+    total = a + b
+    print("global_var in outer function:", global_var)
+
+    def double_it():
+        double = total * 2
+        print("global_var in inner function:", global_var)
+        return double
+
+    return double_it()  # Return the result of double_it, instead of calling it again
+
+
+# Call add_nums with arguments
+result = add_nums(13, 5)
+print("Result:", result)
