@@ -21,8 +21,6 @@ def add_nums(a, b):
 
 # Global scope is when a variable is declared outside of a function.
 global_var = 13
-
-
 def add_nums(a, b):
     total = a + b
     print("global_var in outer function:", global_var)
@@ -38,3 +36,13 @@ def add_nums(a, b):
 # Call add_nums with arguments
 result = add_nums(13, 5)
 print("Result:", result)
+
+#Rehashing functions as i dont fully undertand.
+
+#using simple function here
+
+def greet(first_name, last_name):
+    print(f"greetings {first_name} {last_name}")
+    print("All is well and I wish you the best.")
+
+greet("Sipho", "Mzayiya")
