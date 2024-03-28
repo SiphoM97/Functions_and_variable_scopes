@@ -46,3 +46,9 @@ def greet(first_name, last_name):
     print("All is well and I wish you the best.")
 
 greet("Sipho", "Mzayiya")
+
+# another simple function example:
+
+def increment (number , by):
+    return number + by
+print(increment(2, 5))
